@@ -3,7 +3,7 @@
 
 Bei der Virtualisierung handelt es sich um die Abstraktion von IT-Ressourcen durch eine Software-Schicht. Das grundlegende Prinzip besteht darin, die physische Hardware eines Rechners von den darauf laufenden Softwarekomponenten zu entkoppeln. Diese Abstraktionsschicht wird durch einen sogenannten Hypervisor (Virtual Machine Monitor, VMM) realisiert. Die VM ist eine Software, die den Betrieb mehrerer Gastsysteme auf einem Wirtssystem ermöglicht und die physischen Ressourcen (CPU, RAM, Speicher, Netzwerk) an die einzelnen virtuellen Maschinen verteilt. Nach der Installation kommunizieren die Gastsysteme ausschließlich mit den virtualisierten Ressourcen und nicht mehr direkt mit der physischen Hardware des Wirtssystems.
 
-### Formen der Vir­tua­li­sie­rung
+## Formen der Vir­tua­li­sie­rung
 
 Im Bereich der modernen IT existieren verschiedene Virtualisierungsformen, die sich auf die Abstraktion von IT-Ressourcen beziehen. Im Allgemeinen unterscheidet man zwischen:
 
@@ -12,10 +12,6 @@ Im Bereich der modernen IT existieren verschiedene Virtualisierungsformen, die s
 - Spei­cher-Vir­tua­li­sie­rung
 - Da­ten­-Vir­tua­li­sie­rung
 - Netz­werk-Vir­tua­li­sie­rung
-
-
-![[formen_der_virtualisierung.png]]
-
 
 ## Hardware-Virtualisierung
 
@@ -31,10 +27,6 @@ Das bedeutet, dass die VM keinen direkten Zugriff auf die physische Hardware ode
 
 Da der Hypervisor eine vollständige virtuelle Hardware-Umgebung bereitstellt, ist das Gastbetriebssystem nicht in der Lage, die Virtualisierung zu erkennen. Es behandelt die simulierten Ressourcen wie echte physische Hardware und kann daher ohne jegliche Modifikationen betrieben werden. 
 
-**Darstellung der Voll-Virtualisierung:**
-
-![[vollvirtu.png]]
-
 **Vorteile:**
 
 - Unveränderte Gastbetriebssysteme
@@ -48,13 +40,9 @@ Da der Hypervisor eine vollständige virtuelle Hardware-Umgebung bereitstellt, i
 - Höherer Verwaltungsaufwand des Hypervisors
 - Hohe Ressourcennachfrage einer VM kann die Leistung anderer VMs beeinträchtigen
 
-### Paravirtualisierung
+## Paravirtualisierung
 
 Ist eine Virtualisierungstechnik, bei der das Gast-Betriebssystem so modifiziert wird, dass es direkt mit dem Hypervisor kommunizieren kann, ohne dass eine vollständige Emulation der Hardware erforderlich ist. Die Kommunikation erfolgt über sogenannte Hypercalls. Das reduziert den Übersetzungsaufwand und führt dadurch zu einer Leistungsverbesserung. Besonders bei Aufgaben, die häufig eine Interaktion zwischen Hardware oder Systemressourcen erfordert.
-
-**Darstellung der Para-Virtualisierung:**
-
-![[paravirtu.png]]
 
 **Vorteile:**
 
@@ -69,6 +57,7 @@ Ist eine Virtualisierungstechnik, bei der das Gast-Betriebssystem so modifiziert
 - Geringere Isolation zwischen VMs erhöht Sicherheitsrisiken
 - Leistungsvorteil gegenüber Vollvirtualisierung weitgehend entfallen, deshalb kaum noch eingesetzt
 
+
 ## Vergleich: Vollvirtualisierung vs. Paravirtualisierung
 
 |                    | Vollvirtualisierung                                             | Paravirtualisierung                                                            |
@@ -78,6 +67,8 @@ Ist eine Virtualisierungstechnik, bei der das Gast-Betriebssystem so modifiziert
 | Kompatibilität     | Hoch                                                            | Eingeschränkt<br>(proprietäre Systeme wie Windows nur mit speziellen Treibern) |
 | Verbreitung heute  | Weit verbreitet                                                 | Weitgehend verdrängt                                                           |
 | Beispiele          | VMware, VirtualBox, KVM                                         | Xen                                                                            |
+
+
 
 ## Fazit
 
