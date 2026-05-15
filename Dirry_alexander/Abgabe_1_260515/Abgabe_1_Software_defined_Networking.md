@@ -1,6 +1,6 @@
 # Software Defined Networking (SDN)
 
-**Autor:** Alexander
+**Autor:** Alexander Dirry
 **Datum:** April 2026
 
 ## 1. Was ist Software Defined Networking?
