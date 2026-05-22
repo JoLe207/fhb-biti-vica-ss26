@@ -90,3 +90,8 @@ Das Gastbetriebssystem verwendet spezielle sogenannte Hypercalls statt direkter 
 | Testumgebungen | Datenbankserver |
 | Desktop-Virtualisierung | Optimierte Linux-Umgebungen |
 
+## Quellen  
+- https://www.geeksforgeeks.org/operating-systems/difference-between-full-virtualization-and-paravirtualization/
+- https://www.techtarget.com/searchitoperations/tip/Full-virtualization-vs-paravirtualization-Key-differences
+- https://biztechmagazine.com/article/2024/07/what-is-paravirtualization-perfcon
+- https://de.scribd.com/document/719043044/Difference-between-Full-Virtualization-and-Paravirtualization
