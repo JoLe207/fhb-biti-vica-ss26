@@ -1,7 +1,6 @@
 Thema: Terraform 
 Autor: Patrick Menghini 
 
-
 ## 1. Überblick
 
 Terraform ist ein Open-Source-Tool für Infrastructure as Code (IaC), welches 2014 von der HashiCorp entwickelt und veröffentlicht wurde. Es provisioniert IT-Infrastruktur – von einer einzelnen virtuellen Maschine bis hin zu kompletten Multi-Cloud-Landschaft – nicht mehr „per Mausklick" (ClickOps) über eine Web-Oberfläche eines Cloud-Anbieters sondern als Konfigurationsdateien zu beschreiben. In Git zu versionieren und automatisiert auszurollen.
@@ -69,7 +68,6 @@ flowchart LR
 
 Wichtig: Terraform-Operationen sind **idempotent** – ein wiederholter `apply` ohne Code-Änderung erzeugt keine Änderungen an der Infrastruktur.
 
-
 ---
 
 ## 7. Lizenzwechsel und Fork
@@ -90,15 +88,14 @@ Im Februar 2025 hat IBM HashiCorp übernommen (rund 6,4 Mrd. USD), was die langf
 - **Disaster Recovery.** Eine komplette Cloud-Region lässt sich in Minuten in einer anderen Region neu aufsetzen – Voraussetzung ist nur ein aktuelles State-Backup.
 - **Compliance & Governance.** Policy-as-Code mit Sentinel, OPA oder Checkov prüft jeden `plan` automatisch auf Verstöße (z. B. „keine öffentlich erreichbaren S3-Buckets", „keine Ressourcen ohne Cost-Center-Tag").
 
-
 ---
 
 ## Quellen
 
-1. HashiCorp – *What is Terraform*: <https://developer.hashicorp.com/terraform/intro>
-2. HashiCorp – *What is Infrastructure as Code with Terraform*: <https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code>
-3. Wikipedia – *Terraform (software)*: <https://en.wikipedia.org/wiki/Terraform_(software)>
-4. OpenTofu – *OpenTofu Announces Fork of Terraform*: <https://opentofu.org/blog/opentofu-announces-fork-of-terraform/>
-5. Spacelift – *Terraform License Change (BSL) – Impact on Users & Providers*: <https://spacelift.io/blog/terraform-license-change>
-6. Scalr – *What is OpenTofu? The Open-Source Terraform Fork*: <https://scalr.com/learning-center/what-is-opentofu>
-7. Microsoft Azure – *Infrastructure as Code – HashiCorp Terraform*: <https://azure.microsoft.com/en-us/solutions/devops/terraform>
+1. HashiCorp – What is Terraform: <https://developer.hashicorp.com/terraform/intro>
+2. HashiCorp – What is Infrastructure as Code with Terraform: <https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code>
+3. Wikipedia – Terraform (software): <https://en.wikipedia.org/wiki/Terraform_(software)>
+4. OpenTofu – OpenTofu Announces Fork of Terraform: <https://opentofu.org/blog/opentofu-announces-fork-of-terraform/>
+5. Spacelift – Terraform License Change (BSL) – Impact on Users & Providers: <https://spacelift.io/blog/terraform-license-change>
+6. Scalr – What is OpenTofu? The Open-Source Terraform Fork: <https://scalr.com/learning-center/what-is-opentofu>
+7. Microsoft Azure – Infrastructure as Code – HashiCorp Terraform: <https://azure.microsoft.com/en-us/solutions/devops/terraform>
